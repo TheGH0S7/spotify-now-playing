@@ -1,5 +1,6 @@
 from flask import Flask, Response, jsonify, render_template
 from base64 import b64encode
+from markupsafe import escape
 
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
